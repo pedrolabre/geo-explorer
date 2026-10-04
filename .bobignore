@@ -1,0 +1,12 @@
+# Arquivos e diretórios ignorados pelo IBM Bob durante indexação e análise de contexto
+.git/
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.env
+*.pem
+*.key
+certificates/generated/
+ibm bob curso/

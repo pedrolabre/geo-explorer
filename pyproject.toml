@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "geo-explorer"
+version = "1.0.0"
+description = "Plataforma interativa de exploração de trilhas de aprendizagem, desafios práticos e certificação com suporte a MCP Server e IBM Bob"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "Pedro Dev" }
+]
+dependencies = [
+    "mcp>=1.0.0",
+    "pydantic>=2.0.0",
+    "rich>=13.0.0",
+    "jinja2>=3.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[project.scripts]
+geo-explorer = "src.cli:main"
+geo-explorer-mcp = "src.mcp.server:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
