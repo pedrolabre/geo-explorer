@@ -1,0 +1,25 @@
+================================================================================
+                               GEO-EXPLORER
+                 CERTIFICADO DE CONCLUSÃO DE TRILHA
+================================================================================
+
+Certificamos com distinção que
+
+                           {{ aluno_nome }}
+
+concluiu com êxito a trilha de especialização em:
+
+              {{ trilha_nome }}
+
+com carga horária oficial de {{ carga_horaria_horas }} horas, demonstrando proficiência
+prática em seus módulos e desafios formativos.
+
+--------------------------------------------------------------------------------
+Data de Emissão:     {{ data_emissao }}
+Código de Validação: {{ codigo_validacao }}
+Assinatura Digital:  {{ hash_seguranca }}
+Plataforma:          Geo-Explorer • Sistema de Certificação Digital
+--------------------------------------------------------------------------------
+Para verificar a autenticidade deste certificado, execute:
+geo-explorer verificar {{ codigo_validacao }}
+================================================================================
