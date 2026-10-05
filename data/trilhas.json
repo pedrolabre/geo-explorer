@@ -1,0 +1,414 @@
+{
+  "meta": {
+    "versao": "1.0.0",
+    "atualizacao": "2026-10-07",
+    "descricao": "Base de conhecimento fictícia de trilhas de aprendizagem do Geo-Explorer"
+  },
+  "trilhas": [
+    {
+      "id": "ibm-bob-agentic-ai",
+      "slug": "ibm-bob",
+      "nome": "IBM Bob & Agentic AI: Desenvolvimento Empresarial",
+      "categoria": "Inteligência Artificial & Engenharia de Software",
+      "descricao": "Domine o ecossistema do IBM Bob, o ciclo SDLC na era dos agentes, arquitetura agêntica, governança human-in-the-loop e integração via Model Context Protocol (MCP).",
+      "carga_horaria_horas": 45,
+      "modulos": [
+        {
+          "ordem": 1,
+          "titulo": "Introdução ao IBM Bob e o Novo Papel do Desenvolvedor",
+          "duracao_horas": 8,
+          "topicos": [
+            "De programador manual a dev orquestrador",
+            "Personas do Bob: Ask, Plan, Code e Orchestrator",
+            "Setup profissional no Bob IDE e comando /init",
+            "Criação e manutenção do AGENTS.md"
+          ]
+        },
+        {
+          "ordem": 2,
+          "titulo": "Context Window, Consumo de Bobcoins e Governança",
+          "duracao_horas": 12,
+          "topicos": [
+            "Evitando Context Poisoning em repositórios grandes",
+            "Métricas de produtividade, Bobalytics e cálculo de ROI",
+            "Políticas de Auto-Approve e guardrails com .bob/rules.md",
+            "Configuração de .bobignore para segurança de dados"
+          ]
+        },
+        {
+          "ordem": 3,
+          "titulo": "Model Context Protocol (MCP) — A Conexão Universal",
+          "duracao_horas": 15,
+          "topicos": [
+            "Arquitetura Host vs Servidor: O USB da Inteligência Artificial",
+            "Transportes stdio vs SSE para ferramentas corporativas",
+            "Implementação de Tools, Resources e Prompts MCP",
+            "Conexão com bancos e APIs externas (Appwrite, PostgreSQL, GitHub)"
+          ]
+        },
+        {
+          "ordem": 4,
+          "titulo": "Fluxos Assistidos de Git e Engenharia em Produção",
+          "duracao_horas": 10,
+          "topicos": [
+            "Criação de branches semânticas via linguagem natural",
+            "Geração automatizada de Pull Requests documentados com Bob",
+            "Refatoração baseada em code reviews",
+            "Human-in-the-loop: auditoria e rastreabilidade com BobShell"
+          ]
+        }
+      ],
+      "desafios": [
+        {
+          "id": "desafio-bob-iniciante",
+          "nivel": "iniciante",
+          "titulo": "Documentando Repositório com AGENTS.md e Regras do Bob",
+          "descricao": "Estruture o arquivo AGENTS.md de um projeto legado de e-commerce, definindo as convenções de código, diretórios-chave e guardrails no .bob/rules.md com autoApprove desativado.",
+          "criterios_aceite": [
+            "Criar o arquivo AGENTS.md cobrindo propósito, estrutura e convenções",
+            "Definir .bob/rules.md com autoApprove: false e guardrails de segurança",
+            "Configurar .bobignore para proteger chaves e pastas transitórias"
+          ],
+          "dica": "O Bob utiliza a clareza do AGENTS.md para calibrar a precisão das modificações e evitar context poisoning."
+        },
+        {
+          "id": "desafio-bob-intermediario",
+          "nivel": "intermediario",
+          "titulo": "Criando uma Tool MCP para Análise de Métricas",
+          "descricao": "Implemente uma ferramenta MCP que calcula a taxa de acerto de testes automatizados e retorna um resumo estruturado para o agente.",
+          "criterios_aceite": [
+            "Definir a Tool no padrão JSON Schema esperado pelo MCP",
+            "Tratar entradas nulas ou com formatos inesperados",
+            "Retornar resposta em formato estruturado (JSON ou texto formatado)"
+          ],
+          "dica": "Lembre-se de fornecer uma 'description' rica para que a IA decida quando invocar a ferramenta com precisão."
+        },
+        {
+          "id": "desafio-bob-avancado",
+          "nivel": "avancado",
+          "titulo": "Servidor MCP Customizado com Suporte a Resources e Prompts",
+          "descricao": "Construa um servidor MCP completo via stdio expondo 2 ferramentas operacionais, 1 Resource URI para catálogo de dados e 1 Prompt template para auditoria de segurança.",
+          "criterios_aceite": [
+            "Implementar transporte stdio conforme especificação oficial do MCP",
+            "Expor Resource no formato uri customizado com mimeType application/json",
+            "Criar template de Prompt MCP aceitando parâmetros de contexto",
+            "Garantir conformidade com as diretrizes de isolamento de processos"
+          ],
+          "dica": "Teste o handshake inicial de capabilities para garantir compatibilidade com o IBM Bob."
+        }
+      ]
+    },
+    {
+      "id": "python-ia-automacao",
+      "slug": "python",
+      "nome": "Python para IA, Dados & Automação",
+      "categoria": "Data Science & Backend",
+      "descricao": "Aprenda fundamentos e práticas modernas de Python, manipulação de coleções, automação de fluxos corporativos e integração com modelos de IA generativa.",
+      "carga_horaria_horas": 60,
+      "modulos": [
+        {
+          "ordem": 1,
+          "titulo": "Fundamentos de Python 3 Moderno",
+          "duracao_horas": 15,
+          "topicos": [
+            "Tipagem estática, Type Hints e dataclasses",
+            "Estruturas funcionais: comprehensions, generators e lambdas",
+            "Manipulação robusta de arquivos JSON, CSV e I/O assíncrono"
+          ]
+        },
+        {
+          "ordem": 2,
+          "titulo": "Manipulação de Dados e Engenharia de Scripts",
+          "duracao_horas": 20,
+          "topicos": [
+            "Automação de workflows e rotinas agendadas",
+            "Requisições HTTP resilientes com tratamento de backoff",
+            "Validação rigorosa de esquemas de dados com Pydantic"
+          ]
+        },
+        {
+          "ordem": 3,
+          "titulo": "Integração com LLMs e Agentes em Python",
+          "duracao_horas": 25,
+          "topicos": [
+            "Consumo de APIs de IA e engenharia de prompts estruturados",
+            "Criação de Function Calling / Tools para agentes",
+            "Construção de servidores MCP nativos em Python"
+          ]
+        }
+      ],
+      "desafios": [
+        {
+          "id": "desafio-python-iniciante",
+          "nivel": "iniciante",
+          "titulo": "Normalizador e Validador de Metadados de Alunos",
+          "descricao": "Crie um script em Python que lê uma lista bruta de cadastros, valida formato de email e gera um relatório consolidado com formatação em Rich.",
+          "criterios_aceite": [
+            "Validar emails utilizando expressão regular ou Pydantic",
+            "Eliminar duplicatas preservando a ordem original",
+            "Exibir resumo final com contadores de registros válidos e inválidos"
+          ],
+          "dica": "Utilize dataclasses ou Pydantic BaseModel para garantir tipagem limpa."
+        },
+        {
+          "id": "desafio-python-intermediario",
+          "nivel": "intermediario",
+          "titulo": "Gerador de Relatórios Criptografados com Hash SHA-256",
+          "descricao": "Desenvolva uma rotina que processa logs de conclusão de módulos e gera um comprovante digital assinado por hash SHA-256 para prevenção de fraudes.",
+          "criterios_aceite": [
+            "Calcular hash único baseado nos dados imutáveis do registro",
+            "Persistir os metadados gerados em formato JSON estruturado",
+            "Implementar função de conferência que valida o hash a partir do payload"
+          ],
+          "dica": "O módulo 'hashlib' da biblioteca padrão de Python é suficiente e não requer dependências externas."
+        },
+        {
+          "id": "desafio-python-avancado",
+          "nivel": "avancado",
+          "titulo": "Pipeline Assíncrono de Ingestão com Retry e Rate Limiting",
+          "descricao": "Construa um pipeline assíncrono (asyncio) com fila de tarefas em memória, controle de concorrência com semáforo e re-tentativa exponencial.",
+          "criterios_aceite": [
+            "Processar no mínimo 50 tarefas concorrentes sem bloqueio de I/O",
+            "Limitar concorrência simultânea usando asyncio.Semaphore",
+            "Aplicar estratégia de retry exponencial com jitter para falhas transitórias"
+          ],
+          "dica": "asyncio.gather combinado com semáforos oferece excelente controle de vazão."
+        }
+      ]
+    },
+    {
+      "id": "typescript-fullstack",
+      "slug": "typescript",
+      "nome": "TypeScript & Arquitetura Web Moderna",
+      "categoria": "Frontend & Fullstack",
+      "descricao": "Construção de aplicações escaláveis de ponta a ponta com TypeScript estrito, componentização reativa, APIs REST tipadas e testes de ponta a ponta.",
+      "carga_horaria_horas": 50,
+      "modulos": [
+        {
+          "ordem": 1,
+          "titulo": "TypeScript Avançado e Modelagem de Tipos",
+          "duracao_horas": 15,
+          "topicos": [
+            "Generics, Utility Types e Mapped Types",
+            "Type Narrowing e Discriminated Unions",
+            "Configurações rigorosas do tsconfig (strict: true)"
+          ]
+        },
+        {
+          "ordem": 2,
+          "titulo": "Arquitetura Frontend Reativa",
+          "duracao_horas": 15,
+          "topicos": [
+            "Componentes desacoplados e estado previsível",
+            "Consumo de dados com React Query e mutations seguras",
+            "Design Systems acessíveis com Tailwind CSS"
+          ]
+        },
+        {
+          "ordem": 3,
+          "titulo": "APIs Tipadas e Integração com Agentes",
+          "duracao_horas": 20,
+          "topicos": [
+            "Construção de rotas com validação Zod / tRPC",
+            "SDKs de IA e streaming de respostas em tempo real",
+            "SDK TypeScript oficial do Model Context Protocol (@modelcontextprotocol/sdk)"
+          ]
+        }
+      ],
+      "desafios": [
+        {
+          "id": "desafio-ts-iniciante",
+          "nivel": "iniciante",
+          "titulo": "Catálogo Tipado de Cursos com Filtro por Habilidade",
+          "descricao": "Defina interfaces estritas para um catálogo educacional e crie uma função genérica de filtro capaz de selecionar cursos por critérios flexíveis.",
+          "criterios_aceite": [
+            "Criar interfaces Course, Module e Student com tipagem obrigatória",
+            "Implementar função 'filterByProperty' com generics <T, K extends keyof T>",
+            "Zero uso de 'any' em todo o código"
+          ],
+          "dica": "Aproveite 'keyof' para garantir que somente propriedades existentes possam ser passadas como filtro."
+        },
+        {
+          "id": "desafio-ts-intermediario",
+          "nivel": "intermediario",
+          "titulo": "Sistema de Validação e Parser de Eventos com Discriminated Unions",
+          "descricao": "Crie um processador de eventos que manipula mensagens de aprovação de desafio, conclusão de módulo e emissão de certificado utilizando união discriminada.",
+          "criterios_aceite": [
+            "Definir união tipada com propriedade discriminadora 'type'",
+            "Garantir verificação exaustiva (Exhaustiveness checking com tipo 'never')",
+            "Cobrir fluxos de sucesso e erro com testes automatizados"
+          ],
+          "dica": "Uma função assertNever(x: never) garante que nenhum novo tipo de evento passe sem tratamento."
+        },
+        {
+          "id": "desafio-ts-avancado",
+          "nivel": "avancado",
+          "titulo": "Cliente e Servidor MCP com Validação Zod",
+          "descricao": "Implemente um servidor MCP em TypeScript usando @modelcontextprotocol/sdk expondo ferramentas validadas por esquemas Zod.",
+          "criterios_aceite": [
+            "Configurar McpServer com StdioServerTransport",
+            "Registrar ferramenta 'consultar_trilha' com schema Zod",
+            "Retornar mensagens no formato CallToolResult esperado pelo cliente"
+          ],
+          "dica": "O pacote zodToJsonSchema converte schemas Zod diretamente para o padrão esperado pelo MCP."
+        }
+      ]
+    },
+    {
+      "id": "devops-cloud-native",
+      "slug": "devops",
+      "nome": "DevOps, Containers & Cloud Native",
+      "categoria": "Infraestrutura & Plataforma",
+      "descricao": "Cultura DevOps, automação de esteiras CI/CD com GitHub Actions, empacotamento com Docker multi-stage, Kubernetes e observabilidade contínua.",
+      "carga_horaria_horas": 55,
+      "modulos": [
+        {
+          "ordem": 1,
+          "titulo": "Contêineres com Docker e Boas Práticas",
+          "duracao_horas": 15,
+          "topicos": [
+            "Criação de Dockerfiles seguros e multi-stage builds",
+            "Minimização de superfícies de ataque e imagens distroless",
+            "Orquestração local com Docker Compose"
+          ]
+        },
+        {
+          "ordem": 2,
+          "titulo": "Pipelines de CI/CD com GitHub Actions",
+          "duracao_horas": 20,
+          "topicos": [
+            "Automação de testes unitários, linter e segurança (SAST)",
+            "Geração de tags semânticas e releases automáticas",
+            "Deploy contínuo em ambientes isolados"
+          ]
+        },
+        {
+          "ordem": 3,
+          "titulo": "Observabilidade e Infraestrutura Confiável",
+          "duracao_horas": 20,
+          "topicos": [
+            "Os 3 pilares da observabilidade: Logs, Métricas e Traces",
+            "Health checks, probes de liveness e readiness",
+            "Gestão de segredos com Vault / variáveis de ambiente seguras"
+          ]
+        }
+      ],
+      "desafios": [
+        {
+          "id": "desafio-devops-iniciante",
+          "nivel": "iniciante",
+          "titulo": "Dockerfile Multi-Stage para Aplicação de Linha de Comando",
+          "descricao": "Construa um Dockerfile multi-stage build otimizado para a aplicação Geo-Explorer, gerando uma imagem leve com usuário não-root.",
+          "criterios_aceite": [
+            "Separar estágios de build e execução",
+            "Executar o container com usuário não-root por segurança",
+            "Imagem final com tamanho inferior a 150MB"
+          ],
+          "dica": "Imagens base como python:3.12-slim reduzem drasticamente o peso final."
+        },
+        {
+          "id": "desafio-devops-intermediario",
+          "nivel": "intermediario",
+          "titulo": "Workflow de CI/CD para Validação de Testes e Lint",
+          "descricao": "Escreva um workflow do GitHub Actions (.github/workflows/ci.yml) que roda automaticamente a cada push na branch main e em Pull Requests.",
+          "criterios_aceite": [
+            "Configurar matrix de execução ou ambiente Python 3.12+",
+            "Executar pytest e relatar falhas de teste imediatamente",
+            "Fazer cache de dependências pip para acelerar o pipeline"
+          ],
+          "dica": "A action 'actions/setup-python' possui suporte nativo para 'cache: pip'."
+        },
+        {
+          "id": "desafio-devops-avancado",
+          "nivel": "avancado",
+          "titulo": "Configuração de Servidor MCP em Contêiner Isolado",
+          "descricao": "Implemente a infraestrutura completa de um servidor MCP rodando dentro de um contêiner Docker controlado por healthcheck.",
+          "criterios_aceite": [
+            "Expor canal de comunicação confiável para o processo host",
+            "Definir limites estritos de memória e CPU no compose/manifest",
+            "Configurar log rotation estruturado em formato JSON"
+          ],
+          "dica": "Garanta que sinais SIGTERM sejam tratados adequadamente para shutdown gracioso."
+        }
+      ]
+    },
+    {
+      "id": "java-enterprise-spring",
+      "slug": "java",
+      "nome": "Java Empresarial com Spring Boot & Microservices",
+      "categoria": "Backend Corporativo",
+      "descricao": "Arquitetura corporativa resiliente, Clean Architecture, Domain-Driven Design (DDD), APIs RESTful com Spring Boot, JPA/Hibernate e mensageria distribuída.",
+      "carga_horaria_horas": 70,
+      "modulos": [
+        {
+          "ordem": 1,
+          "titulo": "Java Moderno e Clean Architecture",
+          "duracao_horas": 20,
+          "topicos": [
+            "Records, Pattern Matching, Sealed Classes e Virtual Threads",
+            "Separação de responsabilidades: Domains, Use Cases e Gateways",
+            "Design Patterns corporativos e princípios SOLID aplicados"
+          ]
+        },
+        {
+          "ordem": 2,
+          "titulo": "Ecossistema Spring Boot 3",
+          "duracao_horas": 25,
+          "topicos": [
+            "Spring Data JPA, queries otimizadas e controle transacional",
+            "Spring Security com JWT e RBAC (Role-Based Access Control)",
+            "Documentação de APIs com OpenAPI / Swagger"
+          ]
+        },
+        {
+          "ordem": 3,
+          "titulo": "Microserviços, Resiliência e Integração com IA",
+          "duracao_horas": 25,
+          "topicos": [
+            "Mensageria assíncrona com Apache Kafka / RabbitMQ",
+            "Padrões Circuit Breaker e Retry com Resilience4j",
+            "Integração do Spring AI com serviços externos"
+          ]
+        }
+      ],
+      "desafios": [
+        {
+          "id": "desafio-java-iniciante",
+          "nivel": "iniciante",
+          "titulo": "API REST para Consulta de Trilhas com Spring Boot",
+          "descricao": "Desenvolva um endpoint GET /api/trilhas que retorna a lista de trilhas cadastradas com paginação e DTO imutável (Java Record).",
+          "criterios_aceite": [
+            "Utilizar Java Records para transferência de dados (DTO)",
+            "Retornar ResponseEntity com status 200 OK e dados mapeados",
+            "Implementar tratamento global de exceções com @RestControllerAdvice"
+          ],
+          "dica": "O uso de Records elimina boilerplate de getters, setters e construtores."
+        },
+        {
+          "id": "desafio-java-intermediario",
+          "nivel": "intermediario",
+          "titulo": "Serviço de Emissão de Certificados com Validação Transacional",
+          "descricao": "Implemente a camada de serviço de emissão de certificados garantindo idempotência e cálculo de hash de integridade com Spring Data JPA.",
+          "criterios_aceite": [
+            "Anotar método de negócio com @Transactional(readOnly = false)",
+            "Garantir que um certificado para a mesma trilha e aluno não seja duplicado",
+            "Registrar log de auditoria com data/hora e código único de validação"
+          ],
+          "dica": "Adicione uma constraint de unicidade no banco (aluno_id + trilha_id) para evitar concorrência."
+        },
+        {
+          "id": "desafio-java-avancado",
+          "nivel": "avancado",
+          "titulo": "Arquitetura Orientada a Eventos com Kafka e Dead Letter Queue",
+          "descricao": "Crie um fluxo assíncrono onde a conclusão de uma trilha dispara um evento no Kafka, consumido por um worker que gera o certificado.",
+          "criterios_aceite": [
+            "Configurar produtor e consumidor de tópicos Kafka com Spring Kafka",
+            "Implementar Dead Letter Queue (DLQ) para mensagens corrompidas",
+            "Escrever teste de integração com Testcontainers"
+          ],
+          "dica": "Testcontainers permite rodar uma instância real do Kafka em contêiner durante o teste."
+        }
+      ]
+    }
+  ]
+}
